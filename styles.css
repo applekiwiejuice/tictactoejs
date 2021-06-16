@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+html {
+    font-family: 'Berkshire Swash',
+        cursive;
+}
+
+body {
+    height: 100%;
+    background-image: url("https://i.imgur.com/Zl0QVFIl.jpg");
+    background-color: rgb(56, 56, 56);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+.parent {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.gameTitle {
+    font-size: 40px;
+    color: white;
+}
+
+button {
+    background-image: linear-gradient(315deg, #3b3b3b 0%, #acacac 74%);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05),
+        0 5px 20px rgba(0, 0, 0, 0.1);
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 5px;
+    margin: 0 auto 5px;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+#gameNumber {
+    font-size: 18px;
+    color: white;
+    font-family: 'Andika New Basic',
+        sans-serif;
+}
+
+
+#gameTurn {
+    font-size: 20px;
+    color: white;
+    font-family: 'Andika New Basic',
+        sans-serif;
+}
+
+#scoreElement {
+    color: white;
+    font: normal 18px/100% "Andale Mono",
+        AndaleMono,
+        monospace;
+}
+
+.gameBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+    background-color: #fbb034;
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 30px;
+    width: 450px;
+    height: 450px;
+}
+
+.gameCell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff3df;
+    background-image: linear-gradient(315deg, #fbb034 0%, #ffdd00 74%);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05),
+        0 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    padding: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+img {
+    width: 80px;
+}
